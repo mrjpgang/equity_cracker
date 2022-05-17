@@ -84,7 +84,7 @@ if __name__=="__main__":
         if int(intensity) >= 1 and int(intensity) <= 100:
             print("\033[32mSelected %s as CPU intensity\033[0m"%str(intensity))
             print("Miner starting... [Buidling child processes...]")
-            w3 = Web3(Web3.HTTPProvider(json.load(open("DATA", "r"))['MAIN']["RPC_NODE"]))
+            w3 = Web3(Web3.HTTPProvider(json.load(open("DATA", "r"))['MAIN']["CHECK_NODE"]))
             time.sleep(1)
             if w3.isConnected():
                 if __name__=="__main__":
